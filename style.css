@@ -1,0 +1,120 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(233, 47%, 7%);
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+}
+.main{
+    background-color: hsl(244, 38%, 16%);
+    color: white;
+    width: 540px;
+    height: 410px;
+    padding: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+img{
+    width: 500px;
+    height: 410px;
+    filter:  invert(4%) sepia(4%) saturate(5540%) hue-rotate(240deg) brightness(60%) contrast(100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+    margin-left: -82px;
+}
+h1{
+    font-family: 'Inter', sans-serif;
+    padding: 15px ;
+    margin-top: 4px;
+    
+}
+h1 span{
+    color: hsl(277, 64%, 61%);
+}
+p{
+    color: hsla(0, 0%, 100%, 0.6)    ;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    padding-left: 15px;
+    width: 367px;
+}
+.flex span{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+bdi{
+    color: black;
+    font-weight: normal !important;
+    color:  hsla(0, 0%, 100%, 0.6) ;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 375px){
+    .container{
+       display: flex;
+       flex-wrap: wrap;
+       transform: translate(-50% , -50%);
+    }
+    .flex{
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .main{
+        padding: 0px;
+        width: 300px;
+        height: 450px;
+        text-align: center;
+        font-size: 15px;
+        order: 2;
+        transform: translateY(-5px);
+        border-bottom-right-radius: 5px;
+        border-top-left-radius: 0px;
+    }
+    p{
+        width: 287px;
+        line-height: 20px;
+        }
+        .image{
+            order: 1;
+        }
+        img{
+           width:  300px;
+           height: 200px;
+           border-top-left-radius: 5px;
+           border-bottom-right-radius: 0px;
+        }
+        .flex span{
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 33px;
+        }
+        h1{
+            margin: 0;
+            padding-bottom: 0;
+             font-size: 29px;
+             padding-top: 35px;
+        }
+}
